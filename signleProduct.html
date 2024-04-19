@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiniStore</title>
+    <link rel="stylesheet" href="singleProduct.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <script src="singleProduct.js" defer type="module"></script>
+    <script src="module.js" defer type="module"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  </head>
+  <body>
+    <nav>
+      <h2 class="logo">Mini<span>Store</span></h2>
+      <header>
+      <ul class="nav-links">
+        <li><a href="home.html" class="home">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><button class="logout" id="logout">Logout</button></li>
+      </ul>
+    </header>
+      <div class="menu_toggler">
+        <i class="fa-solid fa-bars toggle_menu"></i>
+        <i class="fa-solid fa-xmark toggle_close"></i>
+    </div>
+    </nav>
+    <div class="container">
+      <main>
+        <div class="left-side">
+          <div class="img">
+            <img src="#" id="thumbnail"/>
+          </div>
+          <div class="remaingin-images">
+          </div>
+        </div>
+        <div class="right-side">
+          <div id="brand"></div>
+          <div class="product-name" id="title"></div>
+          <div class="product-price" id="price">$ </div>
+          <div class="product-rate">
+            <span><i class="fas fa-star"></i></span>
+            <span id="rating"></span>
+          </div>
+          <p class="product-description" id="description"> </p>
+          <div class="buttons">
+            <button type="button" id="addToCart">
+              <i class="fas fa-shopping-cart"></i>ADD TO CART</button>
+          </div>
+        </div>
+      </main>
+  </body>
+</html>

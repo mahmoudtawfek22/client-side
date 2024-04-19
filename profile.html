@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profile</title>
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="profile.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <h2 class="logo">Mini<span>Store</span></h2>
+      <header>
+      <ul class="nav-links">
+        <li><a href="home.html" class="home">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><button class="logout" id="logout">Logout</button></li>
+      </ul>
+    </header>
+      <div class="menu_toggler">
+        <i class="fa-solid fa-bars toggle_menu"></i>
+        <i class="fa-solid fa-xmark toggle_close"></i>
+    </div>
+    </nav>
+    <section class="first-section">
+      <ul class="main-info">
+        <li class="headName">
+          <span id="firstName"> </span> <span id="lastName"></span>
+        </li>
+        <li class="id">
+          <span><i class="fa-solid fa-hashtag"></i></span>
+          <span id="id"></span>
+        </li>
+        <li class="headUsername">
+          <span><i class="fa-solid fa-at"></i></span>
+          <span id="username"></span>
+        </li>
+        <li class="headPhone">
+          <span><i class="fa-solid fa-phone"></i></span>
+          <span id="phone"></span>
+        </li>
+        <li class="headAddress">
+          <span><i class="fa-solid fa-location-dot"></i></span>
+          <span id="address"></span>
+        </li>
+      </ul>
+      <img src="" alt="profile image" id="img" />
+    </section>
+
+    <!-- Personal Data Section -->
+    <section>
+      <button class="accordion">
+        <span>Personal Data</span><span class="show">+</span>
+      </button>
+      <div class="panel">
+        <ul class="personal">
+          <li>First Name : <span id="firstNameSecond"></span></li>
+          <li>Age : <span id="age"></span></li>
+          <li>Weight : <span id="weight"></span></li>
+          <li>Middle Name : <span id="maidenName"></span></li>
+          <li>Date of Birth : <span id="birthDate"></span></li>
+          <li>Height : <span id="height"></span></li>
+          <li>Last Name : <span id="lastNameSecond"></span></li>
+          <li>Gender :<span id="gender"></span></li>
+          <li>Blood Group : <span id="bloodGroup"></span></li>
+        </ul>
+      </div>
+    </section>
+    <!-- //Personal Data Section// -->
+
+    <!-- Contacting Information Section -->
+    <section>
+      <button class="accordion">
+        <span>Contacting Information</span><span class="show">+</span>
+      </button>
+      <div class="panel">
+        <ul>
+          <li>Email : <span id="email"></span></li>
+          <li>Phone Number : <span id="phoneSecond"></span></li>
+          <li>Username : <span id="usernameSecond"></span></li>
+          <li>IP : <span id="ip"></span></li>
+        </ul>
+      </div>
+    </section>
+    <!-- //Contacting Information Section// -->
+
+    <!-- Addresses Section -->
+    <section>
+      <button class="accordion">
+        <span>Addresses</span><span class="show">+</span>
+      </button>
+      <div class="panel">
+        <ul>
+          <li>Address : <span id="addressSecond"></span></li>
+          <li>City : <span id="city"></span></li>
+          <li>Postal Code : <span id="postalCode"></span></li>
+          <li>State : <span id="state"></span></li>
+        </ul>
+      </div>
+    </section>
+    <!-- //Addresses Section// -->
+
+    <!-- Bank Account Information Section -->
+    <section>
+      <button class="accordion">
+        <span>Bank Account Information</span><span class="show">+</span>
+      </button>
+      <div class="panel">
+        <ul>
+          <li>Card Number : <span id="cardNumber"></span></li>
+          <li>Card Type : <span id="cardType"></span></li>
+          <li>Card Expire : <span id="cardExpire"></span></li>
+          <li>Currency : <span id="currency"></span></li>
+          <li>IBAN : <span id="iban"></span></li>
+        </ul>
+      </div>
+    </section>
+    <!-- //Bank Account Information Section// -->
+
+    <!-- Crypto Currency Information Section -->
+    <section>
+      <button class="accordion">
+        <span>Crypto Currency Information</span><span class="show">+</span>
+      </button>
+      <div class="panel">
+        <ul>
+          <li>Coin : <span id="coin">Loading..</span></li>
+          <li>Wallet : <span id="wallet">Loading..</span></li>
+          <li>Network : <span id="network">Loading..</span></li>
+        </ul>
+      </div>
+    </section>
+    <!-- //Crypto Currency Information Section// -->
+  </body>
+</html>

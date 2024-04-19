@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@300;400;500&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+:root {
+  --maincolor: #9f78ff;
+  --black: rgb(36, 36, 36);
+}
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+main {
+  margin: 1rem 0;
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #fff;
+  border-radius: 3px;
+  column-gap: 10px;
+}
+.left-side,
+.right-side {
+  padding: 20px;
+}
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img img {
+  width: 35%;
+  margin-left: 20px;
+}
+.remaingin-images img {
+  display: block;
+  width: 50px;
+}
+.remaingin-images {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+  gap: 8px;
+}
+.remaingin-images div {
+  border: 1px solid var(--maincolor);
+  padding: 1rem;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.remaingin-images div:hover {
+  background-color: var(--maincolor);
+}
+
+.right-side #brand {
+  text-transform: uppercase;
+}
+.right-side .product-name {
+  font-size: 35px;
+  margin-bottom: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.right-side .product-price {
+  font-weight: 700;
+  font-size: 24px;
+  font-weight: 500;
+}
+.right-side .product-rate {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  gap: 10px;
+}
+.right-side .product-rate i {
+  color: gold;
+}
+.right-side .product-description {
+  line-height: 1.6;
+  margin-top: 22px;
+  font-size: 18px;
+  color: rgb(37, 37, 37);
+}
+.right-side .buttons {
+  margin-top: 22px;
+}
+.right-side .buttons button {
+  display: inline-block;
+  font-size: 16px;
+  font-family: inherit;
+  text-transform: uppercase;
+  padding: 15px 16px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+}
+#addToCart {
+  background-color: var(--maincolor);
+}
+#addToCart {
+  background-color: #41306d;
+}
+
+@media(max-width:768px){
+  .img img{
+    height: 230px;
+    width: 100%;
+  }
+  main{
+    display: flex;
+    flex-direction:column ;
+  }
+  .right-side{
+    text-align: center;
+  }
+  .right-side .product-rate{
+    justify-content: center;
+  }
+}
